@@ -6,13 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./dist/style.css">
     <title>supermarket</title>
-    <link rel="shortcut icon" href="https://i.ibb.co/fGrNyfx/220-F-97000552-d8-Rwi-ZAn-Fewznis-Qph-Ptjyxx-RNAAZQ92-removebg-preview-1.png" type="image/x-icon">
+    <link rel="shortcut icon"
+        href="https://i.ibb.co/fGrNyfx/220-F-97000552-d8-Rwi-ZAn-Fewznis-Qph-Ptjyxx-RNAAZQ92-removebg-preview-1.png"
+        type="image/x-icon">
 </head>
 
 <body>
+
     <div class="buttons">
-        <button><h1>sign in</h1></button>
-        <button><h1>sign up</h1></button>
+        <button onclick="toggleSignUp()">
+            <h1>sign up</h1>
+        </button>
+        <button onclick="toggleSignIN()">
+            <h1>sign in</h1>
+        </button>
     </div>
 
     <div class="signUp">
@@ -21,14 +28,18 @@
             <input type="number" name="phone" placeholder="phone number">
             <input type="text" name="password" placeholder="password">
             <button>sign up</button>
+            <button onclick="toggleSignUp()">close</button>
         </form>
     </div>
     <div class="signIn">
-        <input type="text" name="name" placeholder="user name">
+        <form>
+            <input type="text" name="name" placeholder="user name">
             <input type="text" name="password" placeholder="password">
             <button>sign in</button>
+            <button onclick="toggleSignIN()">close</button>
+        </form>
     </div>
- 
+
     <script src="./dist/index.js"></script>
 </body>
 

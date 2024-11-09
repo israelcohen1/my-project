@@ -4,3 +4,25 @@
   gap: 2rem;
   margin-top: 20rem;
 }
+
+.signUp {
+  display: none;
+}
+.signUp form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 30%;
+  align-items: center;
+}
+
+.signIn {
+  display: none;
+}
+.signIn form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 30%;
+  align-items: center;
+}
