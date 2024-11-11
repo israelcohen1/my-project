@@ -11,7 +11,7 @@ app.get('/', function (req, res) {
 app.post('/api/users', function (req, res) {
     console.log('req.body');
     console.log(req.body);
-    res.status(201).json({ message: 'pets saved successfully' });
+    res.status(201).json({ message: 'user saved' });
 });
 app.listen(port, function () {
     console.log("server listening on port " + port);

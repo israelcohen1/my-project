@@ -16,7 +16,7 @@ app.post('/api/users', (req, res) => {
     console.log(req.body);
 
 
-    res.status(201).json({ message: 'pets saved successfully' });
+    res.status(201).json({ message: 'user saved' });
 });
 
 app.listen(port, () => {
