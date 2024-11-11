@@ -7,17 +7,23 @@
 
 .signUp {
   display: none;
+  width: 20rem;
+  position: absolute;
+  left: 40%;
+  margin-top: 2rem;
 }
 .signUp form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  width: 30%;
-  align-items: center;
 }
 
 .signIn {
   display: none;
+  width: 20rem;
+  position: absolute;
+  left: 47%;
+  margin-top: 2rem;
 }
 .signIn form {
   display: flex;

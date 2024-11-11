@@ -17,13 +17,13 @@
         <button onclick="toggleSignUp()">
             <h1>sign up</h1>
         </button>
-        <button onclick="toggleSignIN()">
+        <button onclick="toggleSignIN();">
             <h1>sign in</h1>
         </button>
     </div>
 
-    <div class="signUp">
-        <form>
+    <div class="signUp" style="display: none;">
+        <form onsubmit="handleAddUser(event)">
             <input type="text" name="name" placeholder="user name">
             <input type="number" name="phone" placeholder="phone number">
             <input type="text" name="password" placeholder="password">
@@ -31,7 +31,7 @@
             <button onclick="toggleSignUp()">close</button>
         </form>
     </div>
-    <div class="signIn">
+    <div class="signIn" style="display: none;">
         <form>
             <input type="text" name="name" placeholder="user name">
             <input type="text" name="password" placeholder="password">
